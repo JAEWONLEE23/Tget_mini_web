@@ -8,16 +8,11 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 @Slf4j
 @RequestMapping("/")
-public class HomeController {
+public class Ch01Controller {
 	@RequestMapping("")
 	public String index() {
-		log.info("index() 실행1");
-		log.info("index() 실행2");
-		log.info("index() 실행3");
-		log.info("index() 실행5");
-
-		log.info("index() 실행4");
-		log.info("index() 실행4");
-		return "home";
+		log.info("index()");
+		return "ch01/index";
 	}
+
 }
